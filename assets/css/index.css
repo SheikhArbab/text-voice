@@ -28,18 +28,20 @@ html {
 }
 
 body {
-  background: linear-gradient(-30deg, blue, var(--primary) 95%);
   width: 100vw;
-  height: 100vh;
+  overflow-x: hidden;
+  background: transparent;
 }
 
 .hero {
-  width: 100%;
-  height: 100%;
+  background: linear-gradient(-30deg, blue, var(--primary) 95%);
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 12rem;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -56,10 +58,10 @@ body {
 
 textarea {
   width: 70%;
-  height: 20px;
+  height: 300px;
   background-color: #ffffff15;
   padding: 2em;
-  border-radius: 4em;
+  border-radius: 2em;
   font-size: 1em;
   resize: vertical;
   margin-bottom: 30px;
@@ -99,20 +101,36 @@ textarea {
 }
 
 .row {
-  width: 94%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  overflow-x: hidden;
-  overflow-y: visible !important;
   border-radius: 25px 25px 25px 25px;
   padding: 45px 0;
+  height: fit-content;
+}
+
+
+.highlight{
+
+  background-color: var(--primary);
+}
+
+.btns{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+button:nth-child(1){
+
+  margin-right: 12px;
 }
 
 button,
 .download {
+  margin-bottom : 12px;
   position: relative;
   padding: 12px 35px;
   background: var(--primary);
@@ -124,6 +142,7 @@ button,
   box-shadow: 0 0 0 #fec1958c;
   transition: all .3s ease-in-out;
   cursor: pointer;
+  display: block;
 }
 
 .star-1 {
@@ -263,6 +282,7 @@ button:is(:hover, :focus) .star-6 {
 }
 
 select {
+  cursor: pointer;
   color: white;
   background-color: #ffffff15;
   height: 50px;
@@ -275,15 +295,15 @@ select {
   background-repeat: no-repeat;
   background-size: 20px;
   background-position-x: calc(100% - 14px);
-  background-position-y: 20px;
-  width: fit-content;
+  background-position-y: 16px;
+  width: 300px;
 }
 
-option {
-  background-color: #ffffff15;
-  color: #333;
-}
 
+select > option{
+font-weight: bold;
+  color: var(--primary);
+}
 
 
 
@@ -396,3 +416,19 @@ option {
     transform: translate(0);
   }
 }
+
+
+
+
+@media (max-width: 575.98px) {
+
+
+
+  .hero h1 {
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin-top: -50px;
+    margin-bottom: 50px;
+  }
+  
+  }
