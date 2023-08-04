@@ -49,6 +49,7 @@ body {
   font-weight: 600;
   margin-top: -50px;
   margin-bottom: 50px;
+filter: drop-shadow(1px 3px 1px black);
 }
 
 .hero h1 span {
