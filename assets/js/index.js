@@ -53,3 +53,19 @@ document.querySelector('.download').addEventListener('click', () => {
     document.body.removeChild(audio);
     document.body.removeChild(downloadLink);
 });
+
+
+
+
+
+// google api
+
+function googleTranslateElementInit(){
+
+    new google.translate.TranslateElement(
+        {pageLanguage: 'en'},
+        'google_translate_element'
+    );
+    
+    }
+    

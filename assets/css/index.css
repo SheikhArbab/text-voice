@@ -247,6 +247,7 @@ button:is(:hover, :focus) .star-3 {
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
 }
+  
 
 button:is(:hover, :focus) .star-4 {
   position: absolute;
@@ -281,8 +282,14 @@ button:is(:hover, :focus) .star-6 {
 .fil0 {
   fill: #FFFDEF
 }
+.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+
+display: none;
+}
+
 
 select {
+  display: block;
   cursor: pointer;
   color: white;
   background-color: #ffffff15;
@@ -298,6 +305,7 @@ select {
   background-position-x: calc(100% - 14px);
   background-position-y: 16px;
   width: 300px;
+  margin-bottom: 12px;
 }
 
 
