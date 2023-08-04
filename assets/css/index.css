@@ -419,17 +419,3 @@ font-weight: bold;
 }
 
 
-
-
-@media (max-width: 575.98px) {
-
-
-
-  .hero h1 {
-    font-size: 1.4em;
-    font-weight: bolder;
-    margin-top: -50px;
-    margin-bottom: 50px;
-  }
-  
-  }
